@@ -1,0 +1,214 @@
+
+<html>
+	<head>
+		<title>Data Management Plan for SSNs and Health
+            Information (Data Analysis Homework)
+        </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2B6J5E05LQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2B6J5E05LQ');
+</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>BoBo's</strong> <span>Portfolio</span></a>
+						
+						
+					</header>
+
+				
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/da2.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h2>Data Management Plan for SSNs and Health Information(Homework from Data Analysis)</h2>
+							</header>
+							<div class="content">
+								<p>As we approach 2050, the world will see a significant shift in demographics, with the 65+ population growing at an unprecedented rate. This project explores how we can prepare for a secure, fulfilling, and peaceful old age in the face of these changes.</p>
+								
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+					<section>
+                        <style>
+                            table {
+                                border-collapse: collapse;
+                                 width: 80%;
+                                 margin: 20px auto;
+                            }
+                            th, td {
+                              border: 1px solid #ccc;
+                              padding: 8px 12px;
+                              vertical-align: top;
+                            }
+                            th {
+                              background-color: ;
+                              text-align: left;
+                              width: 25%;
+                            }
+                            h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+    color: #fff;}
+                          </style>
+                          
+                          <h2>1. Social Security Numbers (SSNs)</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>Personally Identifiable Information (PII)</td></tr>
+                            <tr><th>Field Specifications</th><td>String, format "XXX-XX-XXXX"; Unique, non-null</td></tr>
+                            <tr><th>Who Can View</th><td>Data Analysts, IT Team, Supervisors, Medical Staff</td></tr>
+                            <tr><th>Who Can Edit</th><td>Data Analysts, IT (authorized)</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>HIPAA-compliant, encryption, access logs, version control</td></tr>
+                            <tr><th>Data Quality</th><td>Validation, manual spot checks, cleaning flagged records</td></tr>
+                          </table>
+                          
+                          <h2>2. Health Information (PHI)</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>Protected Health Information (PHI)</td></tr>
+                            <tr><th>Field Specifications</th><td>Medical records, diagnoses, treatments, prescriptions</td></tr>
+                            <tr><th>Who Can View</th><td>Doctors, Nurses, Medical Staff, Analysts (anonymized)</td></tr>
+                            <tr><th>Who Can Edit</th><td>Doctors, Nurses, Medical Staff</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>Access logs, version control, retention rules</td></tr>
+                            <tr><th>Data Quality</th><td>Corrections logged, errors flagged, anonymization enforced</td></tr>
+                          </table>
+                          
+                          <h2>3. Demographic Information</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>General Personal Information</td></tr>
+                            <tr><th>Field Specifications</th><td>Name, Address, DOB "YYYY-MM-DD", Gender</td></tr>
+                            <tr><th>Who Can View</th><td>Analysts, Medical Staff, HR</td></tr>
+                            <tr><th>Who Can Edit</th><td>Analysts, Medical Staff, HR</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>Access logs, source tracking, retention rules</td></tr>
+                            <tr><th>Data Quality</th><td>Regular updates, completeness, correction logging</td></tr>
+                          </table>
+                          
+                          <h2>4. Insurance Information</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>Financial and Billing Info</td></tr>
+                            <tr><th>Field Specifications</th><td>Policy number, provider, exp date "YYYY-MM-DD", coverage</td></tr>
+                            <tr><th>Who Can View</th><td>Billing Dept, Medical Staff, Analysts (anonymized)</td></tr>
+                            <tr><th>Who Can Edit</th><td>Billing Dept</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>Access logs, policy history, retention rules</td></tr>
+                            <tr><th>Data Quality</th><td>Validation, reviews by Data Governor</td></tr>
+                          </table>
+                          
+                          <h2>5. Contact Information</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>Personal Contact Information</td></tr>
+                            <tr><th>Field Specifications</th><td>Email "user@example.com", Phone "+1-XXX-XXX-XXXX"</td></tr>
+                            <tr><th>Who Can View</th><td>Analysts, Medical Staff, HR</td></tr>
+                            <tr><th>Who Can Edit</th><td>Analysts, Medical Staff, HR</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>Access logs, update tracking, retention period</td></tr>
+                            <tr><th>Data Quality</th><td>Regular updates, deletion review, log review</td></tr>
+                          </table>
+                          
+                          <h2>6. Employment Information</h2>
+                          <table>
+                            <tr><th>Data Type</th><td>Employee Information</td></tr>
+                            <tr><th>Field Specifications</th><td>Salary "$X,XXX.XX", Position, Employment Dates</td></tr>
+                            <tr><th>Who Can View</th><td>HR, Analysts (anonymized)</td></tr>
+                            <tr><th>Who Can Edit</th><td>HR</td></tr>
+                            <tr><th>Who Can Delete</th><td>Data Governor Only</td></tr>
+                            <tr><th>Metadata Standards</th><td>Access logs, update tracking, legal retention rules</td></tr>
+                            <tr><th>Data Quality</th><td>HR reviews, audits, legal compliance</td></tr>
+                          </table>
+                          
+                        
+                    </section>
+
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<div>
+								<h3>About me</h3>
+								<p>With 20+ years in multimedia and UX design, including 10 in IoT, I create innovative, user-centric solutions. I've collaborated on diverse projects, tailoring designs to user needs. 
+									My background in counseling and integrated art enhances my understanding of user psychology and aesthetics, ensuring intuitive experiences.</br></br>
+
+									Specialties: Product Design, User Experience design, User Interface Design, Information Architectures, Visual Psychological
+								</p>
+							<a class="button small" href="cv.html">My background</a>
+							</div>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="#">bobobo.bobo.ac@gmail.com</a>
+								</div>
+							</section>
+						
+						
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Located</h3>
+									<span>San Francisco Bay Area, CA.<br />
+									United States of America</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							
+							<li><a href="https://www.linkedin.com/in/boboyee/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a class="button small" href="index.html">Back to home</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; bobobodesign.com</li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
